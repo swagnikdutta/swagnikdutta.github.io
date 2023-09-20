@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recurse-center-2023s on Swagnik Dutta</title>
+    <link>https://swagnikdutta.github.io/recurse-center-2023/</link>
+    <description>Recent content in Recurse-center-2023s on Swagnik Dutta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Sep 2023 14:14:59 +0530</lastBuildDate><atom:link href="https://swagnikdutta.github.io/recurse-center-2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 1</title>
+      <link>https://swagnikdutta.github.io/recurse-center-2023/week-1/</link>
+      <pubDate>Wed, 20 Sep 2023 14:14:59 +0530</pubDate>
+      
+      <guid>https://swagnikdutta.github.io/recurse-center-2023/week-1/</guid>
+      <description>Week 1 at recurse center</description>
+    </item>
+    
+  </channel>
+</rss>

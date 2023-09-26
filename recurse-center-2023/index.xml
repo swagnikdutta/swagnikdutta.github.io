@@ -6,14 +6,16 @@
     <description>Recent content in Recurse-center-2023s on Swagnik Dutta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Sep 2023 14:14:59 +0530</lastBuildDate><atom:link href="https://swagnikdutta.github.io/recurse-center-2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Sep 2023 11:26:09 +0530</lastBuildDate><atom:link href="https://swagnikdutta.github.io/recurse-center-2023/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Week 1</title>
-      <link>https://swagnikdutta.github.io/recurse-center-2023/week-1/</link>
-      <pubDate>Wed, 20 Sep 2023 14:14:59 +0530</pubDate>
+      <title>Week 2</title>
+      <link>https://swagnikdutta.github.io/recurse-center-2023/week-2/</link>
+      <pubDate>Mon, 25 Sep 2023 11:26:09 +0530</pubDate>
       
-      <guid>https://swagnikdutta.github.io/recurse-center-2023/week-1/</guid>
-      <description>Week 1 at recurse center</description>
+      <guid>https://swagnikdutta.github.io/recurse-center-2023/week-2/</guid>
+      <description>Good monday morning This week&amp;rsquo;s primary goal is to complete my native dns resolver. It would be nice to get it done within 3 days.
+I like to have secondary projects/todos on the side so that if I hit a roadblock with the first one, there is something else to spend time on. There are couple of things in my mind
+I can watch Andy Pavlo&amp;rsquo;s lecture on database storage. maybe it can conjure some new project ideas (building a LSM tree?</description>
     </item>
     
   </channel>

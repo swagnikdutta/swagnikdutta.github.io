@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Good monday morning This week&rsquo;s primary goal is to complete my native dns resolver. It would be nice to get it done within 3 days.
+I like to have secondary projects/todos on the side so that if I hit a roadblock with the first one, there is something else to spend time on. There are couple of things in my mind
+I can watch Andy Pavlo&rsquo;s lecture on database storage. maybe it can conjure some new project ideas (building a LSM tree?">  
+
+  <title>
+    
+      Week 2
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.10776b9b86bf7e3aca232a6c5e4fbdc3baacf45c0cc3a1802995836aa1689368e8fadebd3e46fdc9ad87eab1f834f5bbb28dbb2b23fea73ae3e57c258caef3bd.css" integrity="sha512-EHdrm4a/fjrKIypsXk&#43;9w7qs9FwMw6GAKZWDaqFok2jo&#43;t69Pkb9ya2H6rH4NPW7so27KyP&#43;pzrj5XwljK7zvQ==" />
+  
+</head>
+<body a="light">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-09-25 11:26:09 &#43;0530 IST">
+            2023-09-25
+        </time>
+    </p>
+
+    <h1>Week 2</h1>
+
+    
+
+    <h1 id="good-monday-morning">Good monday morning</h1>
+<p>This week&rsquo;s primary goal is to complete my native dns resolver. It would be nice to get it done within 3 days.</p>
+<p>I like to have secondary projects/todos on the side so that if I hit a roadblock with the first one, there is something else to spend time on. There are couple of things in my mind</p>
+<ul>
+<li>I can watch Andy Pavlo&rsquo;s lecture on database storage.
+<ul>
+<li>maybe it can conjure some new project ideas (building a LSM tree?)</li>
+</ul>
+</li>
+<li>I can do some SQL practise everyday for about half an hour</li>
+<li>Read further through the first chapter of SICP.</li>
+<li>Read further through 100 Go mistakes.</li>
+</ul>
+<p>Having said that, I would try to dedicate the first three days strictly for my dns resolver.</p>
+<h2 id="day-1">Day 1</h2>
+<h3 id="toy-dns-resolver">Toy DNS resolver</h3>
+<p>Spent most of my daytime reading the <a href="https://datatracker.ietf.org/doc/html/rfc1035#section-4">RFC pages</a>. I took time to understand the structure of the DNS message packet in general and each of its sections and that of Resource Records.</p>
+<pre tabindex="0"><code>
+    +---------------------+
+    |        Header       |
+    +---------------------+
+    |       Question      | the question for the name server
+    +---------------------+
+    |        Answer       | RRs answering the question
+    +---------------------+
+    |      Authority      | RRs pointing toward an authority
+    +---------------------+
+    |      Additional     | RRs holding additional information
+    +---------------------+
+    
+</code></pre><p>Creating the packet is essentially the first step. Which is followed by serialization of it. That&rsquo;s what I have learnt from implementing ping few weeks ago. Except that, ping was much simpler.</p>
+<p>On the coding part I didn&rsquo;t achieve much. I created the types representing the Message and its sections with documentation for each of the fields so that I can avoid switching from Goland to RFC pages frequently.</p>
+<h3 id="volunteered-to-use-tcp-implementation-guide-by-julia-evans">Volunteered to use TCP implementation guide by Julia Evans</h3>
+<p>At night I volunteered to use Julia Evan&rsquo;s guide to implement TCP in a weekend, which is in alpha right now.</p>
+<p>Doing this exercise would mean using the guide to implement TCP in a language of my choice(Go) and report my findings in the process. I feel good about this exercise and it aligns with my goal at RC as well.</p>
+<p>Spent sometime reading the code at a high level. I focused on the TCP checksum calculation part which seemed <em>strange</em>. I referred to the TCP <a href="https://datatracker.ietf.org/doc/html/rfc9293#v4pseudo">RFC pages</a> to learn that checksum calculation in TCP is somewhat differnet. It considers certain informations from the IP header as well which it calls pseudo-header.</p>
+<p>Generally, if packet A encapsulates packet B, pakcet A has to consider the entirety of packet B while calculating checksum.
+But here it seemed that, packet B was interested in certain information from packet A&rsquo;s header.</p>
+<p>Called it a night!</p>
+<h3 id="day-2">Day 2</h3>
+
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>
